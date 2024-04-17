@@ -1,14 +1,34 @@
+import styled, { createGlobalStyle, keyframes } from 'styled-components';
 import Nav from '../components/Nav';
-import styled from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+`;
+
+const fadeIn = keyframes`
+  from { opacity: 0; }
+  to { opacity: 1; }
+`;
 
 const HeroSection = styled.section`
   height: 90vh;
-  background: url('/public/images/hero-bg.jpg') no-repeat center center/cover;
+  background: url('/images/hero-bg.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: black;
+  color: white;
+`;
+
+const HeroContent = styled.div`
+  animation: ${fadeIn} 2s ease-out;
 `;
 
 const Heading = styled.h1`
@@ -33,20 +53,12 @@ const ProductCard = styled.div`
   background: white;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   }
 `;
-
-// Sample data for demonstration
-const products = [
-  { id: 1, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/public/images/product1.jpg' },
-  { id: 2, name: 'Spirit B', description: 'Rich and smooth ...', image: '/public/images/product2.jpg' },
-  { id: 3, name: 'Spirit C', description: 'Bold and classic ...', image: '/public/images/product3.jpg' },
-];
-
 
 const Testimonials = styled.section`
   background: #f0f0f0;
@@ -61,12 +73,6 @@ const Testimonial = styled.div`
   padding: 20px;
 `;
 
-// Example testimonial data
-const testimonials = [
-  { id: 1, quote: "Fraternity Spirits has the best selection that meets all our needs!", author: "Jane Doe" },
-  { id: 2, quote: "Absolutely love the flavors of their new collection!", author: "John Smith" }
-];
-
 const CallToAction = styled.section`
   background: #333;
   color: white;
@@ -74,16 +80,43 @@ const CallToAction = styled.section`
   padding: 50px 20px;
 `;
 
+const CTAButton = styled.button`
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: gold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+// Sample data for demonstration
+const products = [
+  { id: 1, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/images/product1.jpg' },
+  { id: 2, name: 'Spirit B', description: 'Rich and smooth ...', image: '/images/product2.jpg' },
+  { id: 3, name: 'Spirit C', description: 'Bold and classic ...', image: '/images/product3.jpg' },
+];
+
+// Example testimonial data
+const testimonials = [
+  { id: 1, quote: "Fraternity Spirits has the best selection that meets all our needs!", author: "Jane Doe" },
+  { id: 2, quote: "Absolutely love the flavors of their new collection!", author: "John Smith" }
+];
+
 
 export default function Home() {
   return (
     <div>
+    
     <Nav />
+    
     <HeroSection>
-      <div>
-        <Heading>Welcome to Fraternity Spirits</Heading>
-        <SubHeading>Discover our world-class spirits crafted with passion and precision.</SubHeading>
-      </div>
+      <HeroContent>
+          <Heading>Welcome to Fraternity Spirits</Heading>
+          <SubHeading>Discover our world-class spirits crafted with passion and precision.</SubHeading>
+        </HeroContent>
     </HeroSection>
     
     <FeaturedProducts>
@@ -108,7 +141,7 @@ export default function Home() {
     <CallToAction>
       <h2>Ready to taste the best spirits?</h2>
       <p>Visit our store or contact us directly to learn more!</p>
-      <button style={{ padding: '10px 20px', fontSize: '1rem', backgroundColor: 'gold', border: 'none', cursor: 'pointer' }}>Contact Us</button>
+      <CTAButton>Contact Us</CTAButton>
     </CallToAction>
   </div>
   );

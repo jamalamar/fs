@@ -105,3 +105,17 @@ a {
     color-scheme: dark;
   }  
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.heroContent {
+  animation: fadeIn 2s ease-out;
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
