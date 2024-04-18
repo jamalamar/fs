@@ -15,6 +15,7 @@ const TestimonialsContainer = styled.div`
   background: #f0f0f0;
   padding: 50px 20px;
   text-align: center;
+  font-size: 1.4em;
 `;
 
 const Testimonial = styled.div`

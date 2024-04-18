@@ -18,6 +18,19 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const NavBar = styled.nav`
+  background-color: #000; // Black background
+  color: white;
+  padding: 10px 20px;
+  position: sticky; // Ensure navbar is sticky
+  top: 0; // Anchor to the top of the viewport
+  z-index: 1000; // Higher index to keep navbar on top
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; // Full width of the viewport
+`;
+
 const fadeIn = keyframes`
   from { opacity: 0; }
   to { opacity: 1; }
@@ -101,7 +114,7 @@ export default function Home() {
     
     <HeroSection>
       <HeroContent>
-          <Heading>Welcome to Fraternity Spirits</Heading>
+          <Heading>Fraternity Spirits</Heading>
           <SubHeading>Discover our world-class spirits crafted with passion and precision.</SubHeading>
         </HeroContent>
     </HeroSection>
