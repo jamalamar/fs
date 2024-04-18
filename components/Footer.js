@@ -2,24 +2,10 @@
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
-  background-color: #333;
+  background-color: #000;
   color: white;
   padding: 20px 0;
   text-align: center;
-`;
-
-const FooterLinks = styled.div`
-  margin-bottom: 20px;
-
-  a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 `;
 
 const SocialMedia = styled.div`
@@ -37,12 +23,6 @@ const Copyright = styled.p`
 
 const Footer = () => (
   <FooterContainer>
-    <FooterLinks>
-      <a href="/">Home</a>
-      <a href="/about">About Us</a>
-      <a href="/portfolio">Portfolio</a>
-      <a href="/contact">Contact</a>
-    </FooterLinks>
     <SocialMedia>
       <a href="https://facebook.com">
         <img src="/images/facebook-icon.png" alt="Facebook" style={{width: '24px', height: '24px'}} />

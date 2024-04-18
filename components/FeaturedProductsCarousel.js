@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 
 const moveAnimation = keyframes`
   from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  to { transform: translateX(-50%); }
 `;
 
 const CarouselContainer = styled.div`
@@ -24,13 +24,12 @@ const ProductCard = styled.div`
   width: 250px;
   flex-shrink: 0;
   margin-right: 15px;
-  background: white;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 `;
 
 const products = [
-  { id: 1, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/images/product1.jpg' },
+  { id: 1, name: 'Spirit A', description: 'Exquisite flavor of ...', image: 'https://fraternityspirits.com/wp-content/uploads/2023/11/typeelementorsiteurlhttpsfraternityspirits.comwp-jsonelementsidac630d1elTypewidgetisInnerfalseisLockedfalsesettingseditordivdivQuita-6-e1701158404971-768x933.png' },
   { id: 2, name: 'Spirit B', description: 'Rich and smooth ...', image: '/images/product2.jpg' },
   { id: 3, name: 'Spirit C', description: 'Bold and classic ...', image: '/images/product3.jpg' },
   // Duplicate the products to create a seamless transition

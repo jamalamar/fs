@@ -15,7 +15,7 @@ const TestimonialsContainer = styled.div`
   background: #f0f0f0;
   padding: 50px 20px;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1em;
 `;
 
 const Testimonial = styled.div`
@@ -30,9 +30,9 @@ const Testimonial = styled.div`
 `;
 
 const testimonials = [
-  { id: 1, quote: "Fraternity Spirits has the best selection!", author: "Jane Doe" },
-  { id: 2, quote: "Absolutely love the flavors!", author: "John Smith" },
-  { id: 3, quote: "Their customer service is unmatched.", author: "Alice Johnson" }
+  { id: 1, quote: "ProWein 2024 stands as a beacon of innovation, quality, and knowledge exchange in the world of wines and spirits. This event serves as an invaluable opportunity to connect with experts, professionals, and enthusiasts from across the globe.", author: "Prowein 2024" },
+  { id: 2, quote: "ARA certification promotes environmentally responsible practices in the tequila industry through the Agave Responsable Ambiental initiative. ", author: "CORRALEJO ARA CERTIFICATION STEP FORWARD IN SUSTAINABILITY" },
+  { id: 3, quote: "Using sound waves to enhance yeast performance improves flavor by optimizing fermentation for a richer taste profile.", author: "DEEPING INTO SOUNDS WITH RON PROHIBIDO" }
 ];
 
 const Testimonials = () => {
