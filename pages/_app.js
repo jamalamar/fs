@@ -1,4 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Footer from '../components/Footer';
+import '../app/globals.css';
 
 // This is the global style that will be applied across all pages
 const GlobalStyle = createGlobalStyle`
@@ -15,6 +17,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

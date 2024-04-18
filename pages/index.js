@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle, keyframes } from 'styled-components';
 import Nav from '../components/Nav';
+import FeaturedProductsCarousel from '../components/FeaturedProductsCarousel';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -7,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #00000;
     color: #333;
   }
 `;
@@ -47,15 +48,13 @@ const FeaturedProducts = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
+  color: white;
 `;
 
 const ProductCard = styled.div`
-  background: white;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   }
 `;
@@ -109,6 +108,7 @@ const testimonials = [
 export default function Home() {
   return (
     <div>
+    <GlobalStyle />
     
     <Nav />
     
@@ -128,6 +128,8 @@ export default function Home() {
         </ProductCard>
       ))}
     </FeaturedProducts>
+
+    <FeaturedProductsCarousel />
     
     <Testimonials>
       {testimonials.map(testimonial => (
