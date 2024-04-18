@@ -120,7 +120,9 @@ export default function Home() {
         </HeroContent>
     </HeroSection>
     
-    
+    <h1 style={{paddingTop: '2em', fontSize: '2em', textAlign: 'center', color: '#FFC003'}}>
+      BEST SELLERS
+    </h1>
     <FeaturedProducts>
       {products.map(product => (
         <ProductCard key={product.id}>
@@ -130,7 +132,10 @@ export default function Home() {
         </ProductCard>
       ))}
     </FeaturedProducts>
-
+    
+    <h1 style={{paddingTop: '2em', fontSize: '1.5em', textAlign: 'center', color: '#FFC003'}}>
+      EXPLORE MORE
+    </h1>
     <FeaturedProductsCarousel />
 
     <Testimonials/>

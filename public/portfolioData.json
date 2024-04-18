@@ -8,7 +8,7 @@
       "size": "750ml",
       "presentations": ["Bottle"],
       "description": "High-quality tequila known for its rich flavors and smooth finish, distilled in Guanajuato, Mexico.",
-      "image": "/images/portfolio/tequila_corralejo.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Tequila"
     },
     {
@@ -20,7 +20,7 @@
       "size": "750ml",
       "presentations": ["Bottle"],
       "description": "Aged rum offering a complex bouquet of flavors for sophisticated palates, featuring notes of dried fruits and toasted nuts.",
-      "image": "/images/portfolio/ron_prohibido.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Rum"
     },
     {
@@ -32,7 +32,7 @@
       "size": "500ml",
       "presentations": ["Bottle", "Gift Box"],
       "description": "Premium mezcal produced using traditional methods for an authentic taste, with a smoky flavor profile.",
-      "image": "/images/portfolio/mezcal_los_danzantes.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Mezcal"
     },
     {
@@ -44,7 +44,7 @@
       "size": "700ml",
       "presentations": ["Bottle"],
       "description": "A smooth, creamy liqueur blended with tequila, perfect for dessert pairings or enjoyed on its own.",
-      "image": "/images/portfolio/crema_de_tequila_1921.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Tequila"
     },
     {
@@ -56,7 +56,7 @@
       "size": "750ml",
       "presentations": ["Bottle"],
       "description": "Crafted with precision, this tequila is celebrated for its exquisite balance and depth of flavors.",
-      "image": "/images/portfolio/tequila_1921.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Tequila"
     },
     {
@@ -68,7 +68,7 @@
       "size": "750ml",
       "presentations": ["Bottle"],
       "description": "Rich and full-bodied rum, aged to perfection, offering notes of vanilla and caramel.",
-      "image": "/images/portfolio/ron_centenario.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Rum"
     },
     {
@@ -80,7 +80,7 @@
       "size": "750ml",
       "presentations": ["Bottle"],
       "description": "A delightful coffee liqueur made from Mexican coffee beans, ideal for cocktails or sipping neat.",
-      "image": "/images/portfolio/licor_de_cafe_1921.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Liqueur"
     },
     {
@@ -92,7 +92,7 @@
       "size": "750ml",
       "presentations": ["Bottle"],
       "description": "An ultra-premium tequila aged in oak barrels for a distinctive taste and character.",
-      "image": "/images/portfolio/tequila_gran_corralejo.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Tequila"
     },
     {
@@ -104,7 +104,7 @@
       "size": "500ml",
       "presentations": ["Bottle"],
       "description": "Artisanal mezcal characterized by its smoky flavor and smooth finish, distilled in traditional copper pots.",
-      "image": "/images/portfolio/mezcal_alipus.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Mezcal"
     },
     {
@@ -116,7 +116,7 @@
       "size": "500ml",
       "presentations": ["Bottle"],
       "description": "A traditional mezcal with a bold and earthy profile, distilled in copper pots and offering a deep, complex flavor.",
-      "image": "/images/portfolio/mezcal_los_nahuales.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Mezcal"
     },
     {
@@ -128,7 +128,7 @@
       "size": "500ml",
       "presentations": ["Bottle"],
       "description": "A creamy, sweet mezcal liqueur that combines the smokiness of mezcal with the sweetness of cream for a unique taste experience.",
-      "image": "/images/portfolio/crema_mezcal_los_danzantes.jpg",
+      "image": "https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-53-768x960.png",
       "category": "Liqueur"
     }
   ]

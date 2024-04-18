@@ -53,6 +53,9 @@ const Testimonials = () => {
 
   return (
     <TestimonialsContainer>
+      <h1 style={{paddingTop: '', fontSize: '1.5em', textAlign: 'center', color: '#FFC003'}}>
+        TESTIMONIALS
+      </h1>
       <Testimonial key={testimonials[index].id} fadeIn={fadeIn}>
         <p>"{testimonials[index].quote}"</p>
         <strong>- {testimonials[index].author}</strong>
