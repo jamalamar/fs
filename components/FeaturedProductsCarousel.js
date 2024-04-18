@@ -30,13 +30,13 @@ const ProductCard = styled.div`
 `;
 
 const products = [
-  { id: 1, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/public/images/product1.jpg' },
-  { id: 2, name: 'Spirit B', description: 'Rich and smooth ...', image: '/public/images/product2.jpg' },
-  { id: 3, name: 'Spirit C', description: 'Bold and classic ...', image: '/public/images/product3.jpg' },
+  { id: 1, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/images/product1.jpg' },
+  { id: 2, name: 'Spirit B', description: 'Rich and smooth ...', image: '/images/product2.jpg' },
+  { id: 3, name: 'Spirit C', description: 'Bold and classic ...', image: '/images/product3.jpg' },
   // Duplicate the products to create a seamless transition
-  { id: 4, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/public/images/product1.jpg' },
-  { id: 5, name: 'Spirit B', description: 'Rich and smooth ...', image: '/public/images/product2.jpg' },
-  { id: 6, name: 'Spirit C', description: 'Bold and classic ...', image: '/public/images/product3.jpg' },
+  { id: 4, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/images/product1.jpg' },
+  { id: 5, name: 'Spirit B', description: 'Rich and smooth ...', image: '/images/product2.jpg' },
+  { id: 6, name: 'Spirit C', description: 'Bold and classic ...', image: '/images/product3.jpg' },
 ];
 
 const FeaturedProductsCarousel = () => (

@@ -1,6 +1,11 @@
 import styled, { createGlobalStyle, keyframes } from 'styled-components';
+
 import Nav from '../components/Nav';
 import FeaturedProductsCarousel from '../components/FeaturedProductsCarousel';
+import Testimonials from '../components/Testimonials';
+
+
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -44,6 +49,7 @@ const SubHeading = styled.p`
 `;
 
 const FeaturedProducts = styled.section`
+  text-align: center;
   padding: 50px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -57,19 +63,6 @@ const ProductCard = styled.div`
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   }
-`;
-
-const Testimonials = styled.section`
-  background: #f0f0f0;
-  padding: 50px 20px;
-  text-align: center;
-`;
-
-const Testimonial = styled.div`
-  max-width: 600px;
-  margin: auto;
-  font-style: italic;
-  padding: 20px;
 `;
 
 const CallToAction = styled.section`
@@ -98,12 +91,6 @@ const products = [
   { id: 3, name: 'Spirit C', description: 'Bold and classic ...', image: '/images/product3.jpg' },
 ];
 
-// Example testimonial data
-const testimonials = [
-  { id: 1, quote: "Fraternity Spirits has the best selection that meets all our needs!", author: "Jane Doe" },
-  { id: 2, quote: "Absolutely love the flavors of their new collection!", author: "John Smith" }
-];
-
 
 export default function Home() {
   return (
@@ -119,6 +106,7 @@ export default function Home() {
         </HeroContent>
     </HeroSection>
     
+    
     <FeaturedProducts>
       {products.map(product => (
         <ProductCard key={product.id}>
@@ -130,15 +118,8 @@ export default function Home() {
     </FeaturedProducts>
 
     <FeaturedProductsCarousel />
-    
-    <Testimonials>
-      {testimonials.map(testimonial => (
-        <Testimonial key={testimonial.id}>
-          <p>"{testimonial.quote}"</p>
-          <strong>- {testimonial.author}</strong>
-        </Testimonial>
-      ))}
-    </Testimonials>
+
+    <Testimonials/>
 
     <CallToAction>
       <h2>Ready to taste the best spirits?</h2>
