@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle, keyframes } from 'styled-components';
 
 import Nav from '../components/Nav';
+import Hero from '../components/Hero';
 import FeaturedProductsCarousel from '../components/FeaturedProductsCarousel';
 import Testimonials from '../components/Testimonials';
 
@@ -34,20 +35,6 @@ const NavBar = styled.nav`
 const fadeIn = keyframes`
   from { opacity: 0; }
   to { opacity: 1; }
-`;
-
-const HeroSection = styled.section`
-  height: 90vh;
-  background: url('https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-40.png') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-`;
-
-const HeroContent = styled.div`
-  animation: ${fadeIn} 2s ease-out;
 `;
 
 const Heading = styled.h1`
@@ -113,12 +100,7 @@ export default function Home() {
     
     <Nav />
     
-    <HeroSection>
-      <HeroContent>
-          <Heading>Fraternity Spirits</Heading>
-          <SubHeading>Discover our world-class spirits crafted with passion and precision.</SubHeading>
-        </HeroContent>
-    </HeroSection>
+    <Hero />
     
     <h1 style={{paddingTop: '2em', fontSize: '2em', textAlign: 'center', color: '#FFC003'}}>
       BEST SELLERS

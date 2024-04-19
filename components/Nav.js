@@ -13,6 +13,7 @@ const NavBar = styled.nav`
 
 const Logo = styled.img`
   height: 50px;
+  padding-right: 20px;
 `;
 
 const StyledLink = styled(Link)`
@@ -66,7 +67,8 @@ const SocialMediaLinks = styled.div`
     color: white;
 
     &:hover {
-      color: #FFC003;
+      -webkit-mask-image: linear-gradient(black, transparent);
+      mask-image: linear-gradient(black, transparent);
     }
   }
 `;
@@ -92,6 +94,9 @@ const Nav = () => {
     <NavBar>
       <Link href="/" passHref>
           <Logo src="/FSpequeno.png" alt="Fraternity Spirits Logo" />
+      </Link>
+      <Link href="/" passHref style={{letterSpacing: '7px'}}>
+        FRATERNITY <br/> SPIRITS
       </Link>
 
       <HamburgerIcon onClick={toggleMenu}>☰</HamburgerIcon>
