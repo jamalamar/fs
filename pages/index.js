@@ -38,7 +38,7 @@ const fadeIn = keyframes`
 
 const HeroSection = styled.section`
   height: 90vh;
-  background: url('/images/hero-bg.jpg') no-repeat center center/cover;
+  background: url('https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-40.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;

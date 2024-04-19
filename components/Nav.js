@@ -1,57 +1,83 @@
-import { useState } from 'react';
-import Link from 'next/link';
 import styled from 'styled-components';
+import Link from 'next/link';
+import { useState } from 'react';
 
 const NavBar = styled.nav`
-  background-color: #000; // Black background
+  background-color: #000;
   color: white;
   padding: 10px 20px;
-  position: sticky; // Ensure navbar is sticky
-  top: 0; // Anchor to the top of the viewport
-  z-index: 1000; // Higher index to keep navbar on top
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; // Full width of the viewport
-`;
-
-const HamburgerIcon = styled.div`
-  display: none; // Default to not displayed
-  cursor: pointer;
-
-  @media (max-width: 768px) { // Display on small screens
-    display: block;
-  }
 `;
 
 const Logo = styled.img`
-  height: 50px; // Adjust size as needed
+  height: 50px;
+`;
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+  &:hover {
+    color: #FFC003;
+  }
 `;
 
 const NavLinks = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 
   @media (max-width: 768px) {
-    display: ${props => props.isOpen ? 'flex' : 'none'};
     flex-direction: column;
     position: absolute;
-    background-color: #000;
-    right: 0;
     top: 60px;
-    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    display: ${props => props.isOpen ? 'flex' : 'none'};
+    padding: 15px;
     align-items: center;
   }
 
   a {
     color: white;
     text-decoration: none;
-    padding: 10px;
-    transition: color 0.3s ease;
+    margin: 0 15px;
 
     &:hover {
-      color: #ccc;
+      color: #FFC003;
     }
+  }
+`;
+
+const SocialMediaLinks = styled.div`
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  a {
+    margin-left: 10px;
+    color: white;
+
+    &:hover {
+      color: #FFC003;
+    }
+  }
+`;
+
+const HamburgerIcon = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
   }
 `;
 
@@ -67,15 +93,24 @@ const Nav = () => {
       <Link href="/" passHref>
           <Logo src="/FSpequeno.png" alt="Fraternity Spirits Logo" />
       </Link>
-      <HamburgerIcon onClick={toggleMenu}>
-        ☰
-      </HamburgerIcon>
+
+      <HamburgerIcon onClick={toggleMenu}>☰</HamburgerIcon>
+      
       <NavLinks isOpen={isOpen}>
-        <Link href="/" passHref>Home</Link>
-        <Link href="/about" passHref>About Us</Link>
-        <Link href="/portfolio" passHref>Portfolio</Link>
-        <Link href="/contact" passHref>Contact</Link>
+        <Link href="/" passHref>HOME</Link>
+        <Link href="/about" passHref>ABOUT US</Link>
+        <Link href="/portfolio" passHref>PORTFOLIO</Link>
+        <Link href="/contact" passHref>CONTACT</Link>
       </NavLinks>
+      
+      <SocialMediaLinks>
+        <Link href="https://www.facebook.com/FraternitySpirits.com" passHref>
+          <Logo src="/Facebook.png" alt="Facebook Logo" style={{height: '25px'}}/>
+        </Link>
+        <Link href="https://www.instagram.com/fraternity_spirits/" passHref>
+          <Logo src="/Instagram.png" alt="Instagram Logo" style={{height: '25px'}}/>
+        </Link>
+      </SocialMediaLinks>
     </NavBar>
   );
 };
