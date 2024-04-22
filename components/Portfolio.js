@@ -14,18 +14,18 @@ const fadeIn = keyframes`
 
 const PortfolioGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Makes the grid responsive
+  gap: 10px;
   padding: 20px;
 `;
 
 const ProductCard = styled.div`
-  border: ;
+  border: 0px solid #ccc; // Set a light grey border
   padding: 15px;
   text-align: center;
-  background: ;
+  background: #000; // Set background to black;
   animation: ${fadeIn} 0.8s ease-out forwards;
-  opacity: 0; // Start invisible to let animation show change
+  opacity: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -41,29 +41,25 @@ const ProductCard = styled.div`
   }
 
   h3 {
-    transition: color 1.3s ease;
+    transition: color 0.3s ease;
     color: #FFC003;
+    padding: 10px;
+    font-size: 2em;
   }
 
   p {
-    transition: color 1.3s ease;
+    transition: color 0.3s ease;
+    color: #fff;
   }
 
   &:hover img {
     transform: scale(1.1);
   }
 
-  &:hover h3, &:hover p {
-    opacity: 0.6; // Change color on hover for text
+  &:hover p, &:hover p {
+    color: #fff; // Change text color on hover
+    opacity: 0.5;
   }
-`;
-
-
-const PortfolioContainer = styled.div`
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 `;
 
 const Section = styled.section`
@@ -71,7 +67,7 @@ const Section = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 24px;
+  font-size: 24px; // Adjusted for better readability
   color: #333;
   margin-bottom: 20px;
 `;
@@ -86,15 +82,14 @@ const Portfolio = () => {
       .catch(error => console.error('Error fetching portfolio data:', error));
   }, []);
 
-  const categories = [...new Set(items.map(item => item.category))]; // Extract unique categories
-
+  const categories = [...new Set(items.map(item => item.category))];
 
   return (
     <div>
       {categories.map(category => (
         <Section key={category}>
-          <SectionTitle style={{padding: '1em', color: '#FFC003', fontSize: '2.5em', textTransform: 'uppercase'}}>{category}</SectionTitle>
-          <PortfolioContainer>
+          <SectionTitle style={{fontSize: '3em', color: '#FFC003', paddingTop: '1em', paddingLeft: '1em'}}>{category}</SectionTitle>
+          <PortfolioGrid>
             {items.filter(item => item.category === category).map(filteredItem => (
               <ProductCard key={filteredItem.id}>
                 <img src={filteredItem.image} alt={filteredItem.name} />
@@ -102,7 +97,7 @@ const Portfolio = () => {
                 <p>{filteredItem.description}</p>
               </ProductCard>
             ))}
-          </PortfolioContainer>
+          </PortfolioGrid>
         </Section>
       ))}
     </div>

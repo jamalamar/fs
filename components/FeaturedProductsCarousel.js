@@ -36,6 +36,9 @@ const products = [
   { id: 4, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/images/product1.jpg' },
   { id: 5, name: 'Spirit B', description: 'Rich and smooth ...', image: '/images/product2.jpg' },
   { id: 6, name: 'Spirit C', description: 'Bold and classic ...', image: '/images/product3.jpg' },
+  { id: 7, name: 'Spirit A', description: 'Exquisite flavor of ...', image: '/images/product1.jpg' },
+  { id: 8, name: 'Spirit B', description: 'Rich and smooth ...', image: '/images/product2.jpg' },
+  { id: 9, name: 'Spirit C', description: 'Bold and classic ...', image: '/images/product3.jpg' },
 ];
 
 const FeaturedProductsCarousel = () => (

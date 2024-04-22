@@ -18,20 +18,20 @@ const HeroImage = styled.div`
   background-size: cover;
   background-position: center;
   position: absolute;
-  transition: opacity 3s ease-in-out;
+  transition: opacity 2s ease-in-out;
   opacity: ${props => props.show ? 1 : 0};
 `;
 
 const TextOverlay = styled.div`
   position: absolute;
   color: white;
-  font-size: 2rem;
+  font-size: 8vh;
   text-align: center;
-  width: 100%;
+  width: 80%;
   z-index: 10;
   top: 50%;
   transform: translateY(-50%);
-  transition: opacity 3s ease-in-out;
+  transition: opacity 1s ease-in-out;
   opacity: ${props => props.show ? 1 : 0};
 `;
 
@@ -39,9 +39,9 @@ const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [
-    { url: 'https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-40.png', text: 'Welcome to Fraternity Spirits' },
-    { url: 'https://fraternityspirits.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-12-at-1.02.49-AM.jpeg', text: 'Explore Our Exclusive Collections' },
-    { url: 'https://fraternityspirits.com/wp-content/uploads/2024/03/Certified-ara.png', text: 'Crafting Excellence Since 1998' }
+    { url: 'https://fraternityspirits.com/wp-content/uploads/2024/03/Untitled-design-40.png', text: 'FRATERNITY SPIRITS WORLD' },
+    { url: 'https://fraternityspirits.com/wp-content/uploads/2024/03/Certified-ara.png', text: 'A Unique Liquid Union' },
+    { url: 'https://fraternityspirits.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-12-at-1.02.49-AM.jpeg', text: 'Crafting Excellence Since 1998' }
   ];
 
   useEffect(() => {
