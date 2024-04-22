@@ -41,10 +41,11 @@ const ProductCard = styled.div`
   }
 
   h3 {
-    transition: color 0.3s ease;
-    color: #FFC003;
-    padding: 10px;
     font-size: 2em;
+    background: -webkit-linear-gradient(#FFC003, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
   }
 
   p {
@@ -67,9 +68,12 @@ const Section = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 24px; // Adjusted for better readability
-  color: #333;
+  font-size: 3em;
+  color: #FFC003;
   margin-bottom: 20px;
+  padding-left: 1em;
+  padding-top: 1em;
+  text-transform: uppercase;
 `;
 
 const Portfolio = () => {
@@ -88,7 +92,7 @@ const Portfolio = () => {
     <div>
       {categories.map(category => (
         <Section key={category}>
-          <SectionTitle style={{fontSize: '3em', color: '#FFC003', paddingTop: '1em', paddingLeft: '1em'}}>{category}</SectionTitle>
+          <SectionTitle>{category}</SectionTitle>
           <PortfolioGrid>
             {items.filter(item => item.category === category).map(filteredItem => (
               <ProductCard key={filteredItem.id}>
