@@ -6,6 +6,7 @@ import '../app/globals.css';
 // This is the global style that will be applied across all pages
 const GlobalStyle = createGlobalStyle`
   body {
+    margin-top: 75px;
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     font-family: 'Playfair Display', serif;
   }

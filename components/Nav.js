@@ -6,9 +6,15 @@ const NavBar = styled.nav`
   background-color: #000;
   color: white;
   padding: 10px 20px;
+  position: fixed; // Change from sticky to fixed if appropriate for your layout
+  top: 0;
+  left: 0; // Ensure it spans from the left edge
+  right: 0; // Ensure it spans to the right edge
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 `;
 
 const Logo = styled.img`

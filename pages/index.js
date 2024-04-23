@@ -6,20 +6,6 @@ import Hero from '../components/Hero';
 import FeaturedProductsCarousel from '../components/FeaturedProductsCarousel';
 import Testimonials from '../components/Testimonials';
 
-
-const NavBar = styled.nav`
-  background-color: #000; // Black background
-  color: white;
-  padding: 10px 20px;
-  position: sticky; // Ensure navbar is sticky
-  top: 0; // Anchor to the top of the viewport
-  z-index: 1000; // Higher index to keep navbar on top
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; // Full width of the viewport
-`;
-
 const fadeIn = keyframes`
   from { opacity: 0; }
   to { opacity: 1; }
