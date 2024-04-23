@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Nav from '../components/Nav'
-
 
 const StyledComponent = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
@@ -76,7 +74,6 @@ const Text = styled.p`
 const About = () => {
   return (
     <div>
-      <Nav/>
 
       <HeroSection>
         <HeroContent>

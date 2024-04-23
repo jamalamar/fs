@@ -2,24 +2,10 @@ import styled, { createGlobalStyle, keyframes } from 'styled-components';
 import Link from 'next/link';
 
 
-import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 import FeaturedProductsCarousel from '../components/FeaturedProductsCarousel';
 import Testimonials from '../components/Testimonials';
 
-
-
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #00000;
-    color: #333;
-  }
-`;
 
 const NavBar = styled.nav`
   background-color: #000; // Black background
@@ -100,9 +86,6 @@ const products = [
 export default function Home() {
   return (
     <div>
-    <GlobalStyle />
-    
-    <Nav />
     
     <Hero />
     
