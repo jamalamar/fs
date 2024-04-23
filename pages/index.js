@@ -1,4 +1,6 @@
 import styled, { createGlobalStyle, keyframes } from 'styled-components';
+import Link from 'next/link';
+
 
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
@@ -74,13 +76,15 @@ const CallToAction = styled.section`
 
 const CTAButton = styled.button`
   padding: 10px 20px;
+  margin: 10px;
   font-size: 1rem;
-  background-color: gold;
+  background-color: #FFC003;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
+    opacity: 80%;
   }
 `;
 
@@ -125,7 +129,9 @@ export default function Home() {
     <CallToAction>
       <h2>Ready to taste the best spirits?</h2>
       <p>Visit our store or contact us directly to learn more!</p>
-      <CTAButton>Contact Us</CTAButton>
+      <Link href="/contact">
+        <CTAButton>Contact Us</CTAButton>
+      </Link>
     </CallToAction>
   </div>
   );

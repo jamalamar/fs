@@ -4,6 +4,11 @@ import styled from 'styled-components';
 import Nav from '../components/Nav'
 
 
+const StyledComponent = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+  font-family: 'Lora', serif;
+`;
+
 const HeroSection = styled.div`
   height: 90vh;
   width: 100%;
@@ -23,6 +28,7 @@ const HeroContent = styled.div`
 `;
 
 const HeroTitle = styled.h1`
+  font-family: 'Lora', serif;
   font-size: 3rem;
   margin-bottom: 20px;
 `;

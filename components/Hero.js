@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
+const StyledComponent = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+  font-family: 'Lora', serif;
+`;
+
 const HeroContainer = styled.div`
-  height: 90vh;
+    font-family: 'Lora', serif;  
+    height: 90vh;
   width: 100%;
   position: relative;
   overflow: hidden;

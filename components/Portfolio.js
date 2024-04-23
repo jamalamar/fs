@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 
+const StyledComponent = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+  font-family: 'Lora', serif;
+`;
+
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -41,6 +46,7 @@ const ProductCard = styled.div`
   }
 
   h3 {
+    font-family: 'Lora', serif;
     font-size: 2em;
     background: -webkit-linear-gradient(#FFC003, #000);
     -webkit-background-clip: text;
@@ -64,10 +70,11 @@ const ProductCard = styled.div`
 `;
 
 const Section = styled.section`
+  font-family: 'Lora', serif;
   margin-bottom: 40px;
 `;
 
-const SectionTitle = styled.h2`
+const SectionTitle = styled.h2`  
   font-size: 3em;
   color: #FFC003;
   margin-bottom: 20px;
